@@ -56,7 +56,7 @@ const Home = () => {
 
   return (
     <div className="home">
-      <div className="profile-section">
+      <div className="profile-section" style={{ backgroundImage: 'url(/graduation.jpeg)' }}>
         <div className="profile-image-container">
           <img 
             src="/profile.jpg" 
@@ -303,7 +303,7 @@ const Home = () => {
         </div>
 
         {/* Yoga Section */}
-        <div className="personal-item fade-in">
+        <div className="personal-item fade-in yoga-section">
           <div className="personal-content">
             <h3>Yoga for Wellness</h3>
             <p>
@@ -313,18 +313,18 @@ const Home = () => {
               It's my sanctuary for mental health and physical well-being.
             </p>
           </div>
-          <div className="personal-photos">
-            <div className="photo-item">
-              <img src="/yoga1.jpeg" alt="Yoga Practice" onError={(e) => e.target.style.display = 'none'} />
+          <div className="personal-photos yoga-photos">
+            <div className="photo-item yoga-photo-1">
+              <img src="/resh-yoga.jpeg" alt="Yoga Practice" onError={(e) => e.target.style.display = 'none'} />
             </div>
-            <div className="photo-item">
-              <img src="/yoga2.jpeg" alt="Yoga Wellness" onError={(e) => e.target.style.display = 'none'} />
+            <div className="photo-item yoga-photo-2">
+              <img src="/resh-yoga2.jpeg" alt="Yoga Wellness" onError={(e) => e.target.style.display = 'none'} />
             </div>
           </div>
         </div>
 
         {/* Movies Section */}
-        <div className="personal-item fade-in">
+        <div className="personal-item fade-in movies-section">
           <div className="personal-content">
             <h3>Movie Enthusiast</h3>
             <p>
@@ -333,6 +333,11 @@ const Home = () => {
               pumping, and comedy films that bring laughter and joy. Movies are a great way to relax after a long day 
               of coding and network troubleshooting.
             </p>
+          </div>
+          <div className="personal-photos movies-photos">
+            <div className="photo-item movie-photo">
+              <img src="/movies.png" alt="Movie Collection" onError={(e) => e.target.style.display = 'none'} />
+            </div>
           </div>
         </div>
 
